@@ -1,8 +1,7 @@
 /* GENERAL */
 body {
-    font-family: Helvetica, sans-serif;
-    font-style: italic;
-    font-weight: bold;   
+    font-family: 'Helvetica Neue', Helvetica, sans-serif; 
+    background: mintcream;
 }
 
 #wrapper {
@@ -20,38 +19,52 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: black;
+}
 
 
 /* HEADING */
 header {
-    background: linear-gradient(180deg, yellow, transparent);
-}
+    background: linear-gradient(0deg, mintcream, transparent 120%),
+    url("../img/headerbg.jpg");
+    background-position-y: 37%;
+    background-size: cover;
 
-#logo {
-    margin: 0;
 }
 
 h1 {
-
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 35px 0 0 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 h2 {
-
+    margin-top: 0;
+    padding: 0px 0 0 40px;
+    letter-spacing: 0.03em;
 }
 
 h3 {
     text-align: center;
+    text-transform: uppercase;
 }
 
 
 
 /* NAVIGATION */
 nav {
-
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 nav li {
     display: inline-block;
+    margin: 0 80px 0 15px;
 }
 
 
