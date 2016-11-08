@@ -1,42 +1,37 @@
-/* GENERAL */
+/*** GENERAL ***/
+
 body {
     font-family: 'Helvetica Neue', Helvetica, sans-serif; 
-    background: mintcream;
 }
 
 #wrapper {
-    max-width: 940px;
+    max-width: 720px;
     margin: 0 auto;
     padding: 0 5%;
 }
 
-.photo {
-    width: 55%;
-    margin: 0 auto;
-}
-
 a {
     text-decoration: none;
-    color: black;
 }
 
-a:visited {
-    color: black;
+h3 {
+    text-align: center;
+    text-transform: uppercase;
 }
 
 
-/* HEADING */
+
+/*** HEADING ***/
+
 header {
     background: linear-gradient(0deg, mintcream, transparent 120%),
     url("../img/headerbg.jpg");
     background-position-y: 37%;
     background-size: cover;
-
 }
 
 h1 {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     padding: 35px 0 0 40px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
@@ -50,19 +45,19 @@ h2 {
     font-size: 1.35rem;
 }
 
-h3 {
-    text-align: center;
-    text-transform: uppercase;
-}
 
 
+/*** NAVIGATION ***/
 
-/* NAVIGATION */
 nav {
     text-transform: uppercase;
     letter-spacing: 0.07em;
     padding-bottom: 50px;
     margin-bottom: 30px;
+}
+
+nav ul {
+  list-style: none;
 }
 
 nav li {
@@ -72,7 +67,60 @@ nav li {
 
 
 
-/* FOOTER */
-footer {
+/*** FOOTER ***/
 
+footer {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+
+
+/*** PAGE: ABOUT ***/
+
+.profile-photo {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/*** PAGE: PORTFOLIO ***/
+
+
+
+/*** PAGE: CONTACT ***/
+
+
+
+/*** COLORS ***/
+
+/* site body */
+body {
+  background: mintcream;
+}
+
+/* logo text */
+h1, h2 {
+  color: black;
+}
+
+/* links */
+a {
+  color: steelblue;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: black;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: lightgrey;
 }
