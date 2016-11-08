@@ -1,0 +1,62 @@
+/* GENERAL */
+body {
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;   
+}
+
+#wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.photo {
+    width: 55%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* HEADING */
+header {
+    background: linear-gradient(180deg, yellow, transparent);
+}
+
+#logo {
+    margin: 0;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+    text-align: center;
+}
+
+
+
+/* NAVIGATION */
+nav {
+
+}
+
+nav li {
+    display: inline-block;
+}
+
+
+
+/* FOOTER */
+footer {
+
+}
