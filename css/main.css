@@ -1,7 +1,8 @@
 /*** GENERAL ***/
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, sans-serif; 
+    font-family: 'Work Sans', sans-serif; 
+    font-size: 0.95rem;
 }
 
 #wrapper {
@@ -17,6 +18,8 @@ a {
 h3 {
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-weight: 300;
 }
 
 
@@ -31,18 +34,18 @@ header {
 }
 
 h1 {
+    font-weight: 700;
     margin: 0;
     padding: 35px 0 0 40px;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 
 h2 {
-    margin-top: 0;
+    font-family: "Pacifico";
+    margin-top: -8px;
     padding: 0px 0 0 40px;
-    letter-spacing: 0.03em;
-    font-size: 1.35rem;
+    font-size: 1.6rem;
 }
 
 
@@ -50,8 +53,10 @@ h2 {
 /*** NAVIGATION ***/
 
 nav {
+    font-size: 1.2rem;
+    text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.03em;
     padding-bottom: 50px;
     margin-bottom: 30px;
 }
@@ -71,6 +76,8 @@ nav li {
 
 footer {
   text-align: center;
+  font-size: 0.9em;
+  font-weight: 300;
   padding-top: 50px;
 }
 
@@ -88,6 +95,7 @@ footer {
     display: block;
     max-width: 300px;
     margin: 0 auto;
+    border: 0.1px solid lightgrey;
 }
 
 /*** PAGE: PORTFOLIO ***/
@@ -96,6 +104,24 @@ footer {
 
 /*** PAGE: CONTACT ***/
 
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
 
 
 /*** COLORS ***/
@@ -103,11 +129,16 @@ footer {
 /* site body */
 body {
   background: mintcream;
+  color: #282828;
 }
 
 /* logo text */
-h1, h2 {
-  color: black;
+h1 {
+  color: #1d2c44;
+}
+
+h2 {
+  color: #45536b;
 }
 
 /* links */
@@ -117,10 +148,10 @@ a {
 
 /* nav link */
 nav a, nav a:visited {
-  color: black;
+  color: #686868;
 }
 
 /* selected nav link */
 nav a.selected, nav a:hover {
-  color: lightgrey;
+  color: steelblue;
 }
