@@ -3,12 +3,14 @@
 body {
     font-family: 'Work Sans', sans-serif; 
     font-size: 0.95rem;
+    padding-top: 259px;
 }
 
 #wrapper {
     max-width: 720px;
     margin: 0 auto;
     padding: 0 5%;
+    min-height: calc(100vh - 259px - 152px);
 }
 
 a {
@@ -31,6 +33,9 @@ header {
     url("../img/headerbg.jpg");
     background-position-y: 37%;
     background-size: cover;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 h1 {
