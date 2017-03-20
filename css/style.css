@@ -70,12 +70,8 @@ section {
     margin-bottom: 2em;
 }
 
-main {
-padding-top: 1.3em;
-}
-
 .tagline {
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
 
 figure {
@@ -84,7 +80,7 @@ figure {
 
 .figimg {
     object-fit: cover;
-    height: 165px;
+    min-height: 165px;
     padding-bottom: 1em;
 }
 
@@ -94,6 +90,14 @@ figure {
 
 .figright { 
     padding: 0 0 0 0.5em;
+}
+
+#about p img {
+        display: none;
+    }
+
+.socialicons {
+    font-size: 1.7em;
 }
 
 footer {
@@ -146,8 +150,24 @@ footer {
 @media screen and (min-width: 481px) {
 
     /* design */    
+    .logotext {
+        font-size: 1.5em;
+    }
+    
     .tagline {
         font-size: 3.5em;
+    }
+
+    .figimg {
+    min-height: 365px;
+    }
+
+    #about p img {
+        display: block;
+        float: right;
+        max-width: 50%;
+        padding: 0 1em 0 2em;
+        opacity: 0.9;
     }
    
 }
