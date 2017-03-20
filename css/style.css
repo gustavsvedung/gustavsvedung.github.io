@@ -55,7 +55,7 @@ img {
 }
 
 i {
-    padding-right: 0.5em;
+    padding-right: 1em;
     color: #19334d;
 }
 
@@ -74,8 +74,13 @@ section {
     font-size: 2.2em;
 }
 
+.sociallinksimg {
+    display: none;
+}
+
 figure {
     margin: 1em 0;
+    text-transform: uppercase;
 }
 
 .figimg {
@@ -121,10 +126,12 @@ footer {
     transition: opacity 400ms ease-in;
     pointer-events: none;
 }
+
 .modalDialog:target {
     opacity:1;
     pointer-events: auto;
 }
+
 .modalDialog > div {
     width: 85vw;
     position: relative;
@@ -150,8 +157,18 @@ footer {
 @media screen and (min-width: 481px) {
 
     /* design */    
+    .menuicons {
+        font-size: 2em;
+    }
+    
     .logotext {
         font-size: 1.5em;
+        top: 0.5em;
+    }
+
+    main {
+        max-width: 801px;
+        margin: 0 auto;
     }
     
     .tagline {
@@ -162,18 +179,109 @@ footer {
     min-height: 365px;
     }
 
+    #about {
+        height: 370px;
+    }
+
     #about p img {
         display: block;
         float: right;
         max-width: 50%;
+        max-height: 340px;
         padding: 0 1em 1em 1.5em;
         opacity: 0.9;
+    }
+
+      /* modals */
+    .modalDialog > div {
+        max-width: 80vw;
+        max-height: 90vh;
+        margin: 5% auto;
+    }
+
+    .modalDialog img {
+        max-width: 75vw;
+        max-height: 70vh;
+        width: auto;
+        margin: auto;
+        display: block;
     }
    
 }
     
  
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 1024px) {
+
+    /* flexbox */
+    figure {
+        flex: 1 0 33%;
+    }
+
+    /* design */
+    .menuicons {
+        position: fixed;
+        left: 1em;
+    }
+     
+     main {
+        max-width: calc(100vw - 380px);
+        margin: 0 auto;
+        padding-top: 3.5em;
+    }
+
+    .gustavimg {
+        position: relative;
+    }
+
+    .sociallinksimg {
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    .sociallinksimg i {
+        color: white;
+    }
+
+    figure {
+        max-width: 33%;
+        text-transform: uppercase;
+    }
+
+    .figbigleft { 
+        padding: 0 0.5em 0 0;
+    }
+
+    .figbigright { 
+        padding: 0 0 0 0.5em;
+    }
+
+    .figmiddle {
+        padding: 0 0.5em;
+    }
+
+    #about {
+        height: 370px;
+    }
+    
+    #about p img {
+        max-width: 40%;
+    }
+
+    /* modals */
+    .modalDialog > div {
+        max-width: 70vw;
+        margin: 2% auto;
+    }
+
+    .modalDialog img {
+        max-width: 65vw;
+    }
+
+
 
 }
