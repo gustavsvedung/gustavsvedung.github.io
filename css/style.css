@@ -176,7 +176,7 @@ footer {
     }
 
     .figimg {
-    min-height: 365px;
+    min-height: 40vw;
     }
 
     #about {
@@ -208,10 +208,26 @@ footer {
     }
    
 }
+
+
+
+@media screen and (min-width: 481px) and (max-width: 770px) and (orientation:landscape) {
+
+  /* modals */
+    .modalDialog > div {
+        max-height: 90vmin;
+        margin: 2% auto;
+    }
+
+    .modalDialog img {
+        max-height: 50vmin;
+    }
+
+}
     
  
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 770px) {
 
     /* flexbox */
     figure {
@@ -250,6 +266,10 @@ footer {
     figure {
         max-width: 33%;
         text-transform: uppercase;
+    }
+
+    .figimg {
+    min-height: 20vw;
     }
 
     .figbigleft { 
