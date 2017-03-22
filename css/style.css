@@ -241,7 +241,7 @@ footer {
     }
      
      main {
-        max-width: calc(100vw - 380px);
+        max-width: calc(100vw - 390px);
         margin: 0 auto;
         padding-top: 3.5em;
     }
