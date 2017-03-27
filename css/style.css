@@ -176,7 +176,8 @@ footer {
     }
 
     .figimg {
-    min-height: 40vw;
+        min-height: 40vw;
+        max-height: 30vh;
     }
 
     #about {
@@ -269,7 +270,8 @@ footer {
     }
 
     .figimg {
-    min-height: 20vw;
+        min-height: 20vw;
+        max-height: 20vh;
     }
 
     .figbigleft { 
